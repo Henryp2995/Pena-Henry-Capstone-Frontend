@@ -1,0 +1,27 @@
+.items-container {
+    margin: 20px;
+  }
+  
+  .items-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .items-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .item {
+    margin-bottom: 10px;
+  }
+  
+  .item-title {
+    font-weight: bold;
+  }
+  
+  .item-scale,
+  .item-price {
+    font-style: italic;
+  }
+  

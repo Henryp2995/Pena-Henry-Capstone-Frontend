@@ -5,3 +5,34 @@
   text-align: center;
 }
 
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline;
+  margin-right: 10px;
+}
+
+.landing-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.landing-image {
+  max-width: 100%;
+  margin-top: 20px;
+}
+

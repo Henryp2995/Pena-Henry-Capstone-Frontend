@@ -2,28 +2,46 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import About from '/src/pages/AboutUs.jsx';
 import Items from '/src/pages/Items.jsx';
+import './App.css'; // Import your CSS file for styling
 
 const App = () => {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/items">Items</Link></li>
-            <li><Link to="/about">About Us</Link></li>
+      <div className="app-container">
+        <nav className="nav-container">
+          <ul className="nav-list">
+            <li className="nav-item"><Link to="/">Home</Link></li>
+            <li className="nav-item"><Link to="/items">Items</Link></li>
+            <li className="nav-item"><Link to="/about">About Us</Link></li>
           </ul>
         </nav>
         <Routes>
-          <Route path="/Items" element={<Items />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/items" element={<ItemsPage />} />
           <Route path="/about" element={<About />} />
-          {/* Define other routes here */}
         </Routes>
-        Welcome to my gundam webstore
-        <img src="./src/assets/home.jpg" alt="" />
       </div>
     </Router>
   );
 };
 
+const Landing = () => {
+  return (
+    <div className="landing-container">
+      Welcome to my gundam webstore
+      <img src="./src/assets/home.jpg" alt="" className="landing-image" />
+    </div>
+  );
+};
+
+const ItemsPage = () => {
+  return (
+    <div>
+      <h2>Items</h2>
+      <Items />
+    </div>
+  );
+};
+
 export default App;
+
