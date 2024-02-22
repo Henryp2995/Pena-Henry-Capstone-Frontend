@@ -1,0 +1,30 @@
+# My App
+
+This is my capstone app, its made based on the anime Gundam and its hobby of model building
+
+## Link to backend Repo
+https://github.com/Henryp2995/Pena-Henry-Capstone-Backend
+
+## Dependencies
+
+react: "^18.2.0
+react-dom: "^18.2.0
+react-router: "^6.22.1
+react-router-dom: "^6.22.1
+Vite? 
+
+## Usage
+
+1. Clone this repository.
+2. Run npm run dev
+
+## App Structure
+
+'app.jsx' - This is the main entry point of the frontend application. It sets up routing using React Router and defines the main layout of the application.
+
+'pages/'  - This directory contains React components for different pages of the application:
+AboutUs.jsx: Component for the About Us page.
+Items.jsx: Component for displaying items.
+AddItems.jsx: Component for adding items.
+
+'App.css' - This file contains my styling
